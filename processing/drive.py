@@ -14,7 +14,7 @@ def download_files(load_all=False):
     }
 
     # Directory to save downloaded files
-    download_dir = r"D:/Movie-Recommender-System/Files"
+    download_dir = r"D:/Movie-Recommender-System/Models"
     os.makedirs(download_dir, exist_ok=True)
 
     # Download files if not already present
@@ -25,5 +25,3 @@ def download_files(load_all=False):
             gdown.download(f"https://drive.google.com/uc?id={file_id}", output_path, quiet=False)
 
     print("All files are downloaded successfully.")
-
-download_files()
