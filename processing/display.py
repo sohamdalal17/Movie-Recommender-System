@@ -24,7 +24,7 @@ class Main():
         return self.new_df, self.movies, self.movies2
 
     def get_df(self):
-        base_path = "Files"
+        base_path = "Models"
 
         # Updated pickle file path
         pickle_file_path = os.path.join(base_path, "new_df_dict.pkl")
@@ -90,7 +90,7 @@ class Main():
         return sim_bt
 
     def get_similarity(self, col_name):
-        base_path = "Files"
+        base_path = "Models"
         # Updated pickle file path with dynamic column name
         pickle_file_path = os.path.join(base_path, f"similarity_tags_{col_name}.pkl")
         if os.path.exists(pickle_file_path):
