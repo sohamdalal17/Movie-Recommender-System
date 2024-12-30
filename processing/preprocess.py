@@ -46,8 +46,8 @@ def get_crew(obj):
 
 def read_csv_to_df():
     #  Reading both the csv files
-    credit_ = pd.read_csv(r'Data/tmdb_5000_credits.csv')
-    movies = pd.read_csv(r'Data/tmdb_5000_movies.csv')
+    credit_ = pd.read_csv(r'Files/tmdb_5000_credits.csv')
+    movies = pd.read_csv(r'Files/tmdb_5000_movies.csv')
 
     # Merging the dataframes
     movies = movies.merge(credit_, on='title')
