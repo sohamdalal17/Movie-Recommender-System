@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 @st.cache_resource
 def load_all_models():
     with st.spinner('Please wait, the models are downloading...'):
-        download_dir = r"D:/Movie-Recommender-System/Models"
+        download_dir = "Movie-Recommender-System/Models"
         files_to_load = {
             "movies_dict.pkl": "1RNcXlMl_Pe5v2dPeJ0JIM_KoeDQpKoAK",
             "movies2_dict.pkl": "1PIkyf7WCx3ZAPhTFAHcKjTcIjsHGxaRA",
